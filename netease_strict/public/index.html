@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>网易严选</title>
+</head>
+<body>
+  <script>
+    ~ function () {
+      let evt = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+      function computed() {
+        let HTML = document.documentElement,
+          deviceW = HTML.clientWidth,
+          designW = 640,
+          ratio = deviceW / designW * 100;
+        if (deviceW >= designW) ratio = 100;
+        HTML.style.fontSize = ratio + 'px';
+      }
+      computed();
+      window.addEventListener(evt, computed);
+    }();
+  </script>
+  <div id="root">
     
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-  </body>
+  </div>
+</body>
 </html>
