@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Header from './header';
 
 class home extends React.Component {
 	render() {
 		return <div>
-		首页
+		<Header></Header>
 		</div>;
 	}
 }
