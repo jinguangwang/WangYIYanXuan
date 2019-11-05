@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {NavLink,withRouter} from 'react-router-dom'
-import { Icon } from 'antd';
 import './Tab.less'
 
 
@@ -10,7 +9,7 @@ function Tab(props){
     return (
         <>
         {flag ?null:<div className='tab'>
-        <NavLink className="link" to="/">
+        <NavLink className="link" to="/" exact>
             <i className="icon"></i>
             <span>首页</span>
         </NavLink>

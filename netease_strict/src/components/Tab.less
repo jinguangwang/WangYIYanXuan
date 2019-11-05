@@ -30,9 +30,7 @@
 		}
 		
 	}
-	.link&.active{
-		color: rgb(145, 69, 59);
-	}
+	
 
 	.link:nth-child(1) {
 		.icon {
@@ -40,10 +38,18 @@
 			margin-left: .02rem;
 			margin-bottom: .04rem;
 		}
+		
 
 		&.active {
-			color:red;
+			.icon{
+				background-position: 0 44%;
+
+			}
 		}
+		&.active span{
+			color:rgb(204, 59, 40)
+		}
+		
 	}
 
 	.link:nth-child(2) {
@@ -53,8 +59,14 @@
 			margin-bottom: .04rem;
 		}
 
-		.active {
-			color: red;
+		&.active {
+			.icon{
+				background-position: 0 22%;
+
+			}
+		}
+		&.active span{
+			color:rgb(204, 59, 40)
 		}
 	}
 
@@ -67,8 +79,11 @@
 
 		&.active {
 			.icon {
-				background-position: 0 22%;
+				background-position: 0 66%;
 			}
+		}
+		&.active span{
+			color:rgb(204, 59, 40)
 		}
 	}
 
@@ -81,8 +96,11 @@
 
 		&.active {
 			.icon {
-				background-position: 0 77.5%;
+				background-position: 0 0%;
 			}
+		}
+		&.active span{
+			color:red;
 		}
 	}
 
@@ -95,8 +113,11 @@
 
 		&.active {
 			.icon {
-				background-position: 0 99.5%;
+				background-position: 0 88%;
 			}
+		}
+		&.active span{
+			color:rgb(204, 59, 40)
 		}
 	}
 }

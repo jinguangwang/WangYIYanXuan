@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class home extends React.Component {
 	render() {
 		return <div>
-		网易严选
+		首页
 		</div>;
 	}
 }
