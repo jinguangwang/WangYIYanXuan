@@ -1686,8 +1686,8 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
 
 antd@^3.25.0:
   version "3.25.0"
-  resolved "https://registry.npm.taobao.org/antd/download/antd-3.25.0.tgz#d1d609038b3d17ddf9dfc1c3e3a9186d1c53849d"
-  integrity sha1-0dYJA4s9F93538HD46kYbRxThJ0=
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.25.0.tgz#d1d609038b3d17ddf9dfc1c3e3a9186d1c53849d"
+  integrity sha512-FJH2w59dwMykwzsLcl6IQqLTUwQSU8AUQCkVpIQt5yBIneqQI3V8Xip/zCPBQhAIQ20IbV4uqhUwW6LUsAPcYg==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
