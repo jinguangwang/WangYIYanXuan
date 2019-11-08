@@ -1,0 +1,62 @@
+.listItem {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .listItem-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .listItem-red {
+        position: absolute;
+
+        .list-img {
+            position: relative;
+            width: 48%;
+            height: .2rem;
+            span{
+                position: relative;
+                top: -27px;
+                left: 0;
+                height: .2rem;
+            }
+            p{
+                margin-top: -31px;
+                text-align: center;
+                margin-left: -1.4rem;
+            }
+            .time{
+
+            }
+        }
+        
+
+
+    }
+
+    .listItem-desc {
+        margin: .25rem;
+        // margin-left:.25rem;
+        margin-left: 0.03rem;
+    }
+
+    .listItem-pic {
+        margin-top: -0.18rem;
+        color: red;
+        span{
+            text-decoration:line-through;
+            color: #999;
+        }
+    }
+
+
+
+}

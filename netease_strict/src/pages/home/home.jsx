@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import Header from './header';
-import Recommend from './recommend';
+// import Recommend from './recommend';
 import Banner from '../../components/Banner';
 
 class home extends React.Component {
@@ -12,6 +12,7 @@ class home extends React.Component {
 		   <Header></Header>
 		   {/* <Recommend></Recommend> */}
 		   <Banner></Banner>
+		   
 		  </div>
 	   </div>
 		);
