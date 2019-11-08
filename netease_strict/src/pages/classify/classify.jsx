@@ -7,6 +7,7 @@ class classify extends React.Component {
 		分类
 		</div>;
 	}
+	
 }
 
 export default classify;
