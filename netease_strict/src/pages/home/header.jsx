@@ -12,19 +12,20 @@ class Header extends Component {
     }
     render() { 
         return ( 
-            <div className="main-header">
-        <div className="logo-box">
-            <img src='' alt="" />
-        </div>
-        <div className="search-box" onClick={ev=>{
+    <div className="main-header clearfix">
+      <div className="logo-box">
+        <img src={require('../../assets/images/logo.png') } alt="" />
+      </div>
+      <div className="search-box" 
+         onClick={ev=>{
             this.props.history.push('/search');
         }}>
-            <img src="https://static.home.mi.com/youpin/static/m/res/images/home_search.png" alt="" />
-            <span>年货嗨抢，最高直降1000</span>
-        </div>
-        <div className="msg-box" style={{visibility:'hidden'}}>
-            <div className="msg"></div>
-        </div>
+        <img src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-553dba3aff.png" alt="" />
+            <span>搜索商品，共有24049款好物</span>
+      </div>
+      <div className="loginBtn"> 
+            登录
+      </div>
     </div>
          );
     }

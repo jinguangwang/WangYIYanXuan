@@ -15,6 +15,7 @@ class classify extends React.Component {
 			</div>
 		</div>;
 	}
+	
 }
 
 export default classify;
