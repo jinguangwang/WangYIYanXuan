@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {NavLink,withRouter} from 'react-router-dom';
 
 
 // 引入 css 样式
@@ -9,6 +10,11 @@ class Header extends Component {
     constructor(props){
         super(props)
         this.props = props
+    }
+
+    tiaoDengLu=()=>{
+      console.log(11111);
+      window.location.href='http://localhost:3000/#/personal'
     }
     render() { 
         return ( 
@@ -23,12 +29,12 @@ class Header extends Component {
         <img src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-553dba3aff.png" alt="" />
             <span>搜索商品，共有24049款好物</span>
       </div>
-      <div className="loginBtn"> 
-            登录
+      <div className="loginBtn">     
+            <NavLink to='/personal'> 登录 </NavLink>  
       </div>
     </div>
          );
     }
 }
  
-export default Header;
+export default withRouter(Header) ;
