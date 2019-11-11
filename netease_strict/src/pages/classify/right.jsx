@@ -2,13 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './right.less';
 let data = [
-  {
-    "name": "双11专区",
-      "id": 1,
-      "pic": "https://yanxuan.nosdn.127.net/9f6527e200948c4e1f29963531520006.jpg?imageView&thumbnail=0x196",
-
-    },
-    {
+  {"id": 1,
+    "pic": "https://yanxuan.nosdn.127.net/9f6527e200948c4e1f29963531520006.jpg?imageView&thumbnail=0x196",
+    "list": [{
       "id": 2,
       "pic": "https://yanxuan.nosdn.127.net/63d0143fbab9805fff7487b89529b6b5.png?imageView&quality=85&thumbnail=144x144",
       "title": "精选好物15元起"
@@ -42,11 +38,10 @@ let data = [
       "id": 8,
       "pic": "https://yanxuan.nosdn.127.net/940487ab4ebd6de850454c5605710d9f.png?imageView&quality=85&thumbnail=144x144",
       "title": "美食129选9再享8折"
-    },
-    {
-      "id": 9,
-      "pic": "https://yanxuan.nosdn.127.net/9f6527e200948c4e1f29963531520006.jpg?imageView&thumbnail=0x196",
-      "title": "冬装特惠59元起"
+    }, {
+        "id":9,
+        "pic":"https://yanxuan.nosdn.127.net/b0e4fffc4ae4ecba747b1141ed80cc5a.png?imageView&quality=85&thumbnail=144x144",
+        "title":"美食129选9再享8折"
     },
     {
       "id": 10,
@@ -67,12 +62,12 @@ let data = [
       "id": 13,
       "pic": "https://yanxuan.nosdn.127.net/5fef565e9220d479ce064f757ab6eb7d.png?imageView&quality=85&thumbnail=144x144",
       "title": "8折券叠加满减低至3折"
-    }
-, {
-    "name": "暖冬好物",
-      "id": 14,
-      "pic": "https://yanxuan.nosdn.127.net/ed8077b5c1930c001d33db2dca28a2a0.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  },
+  , {
+    "id": 14,
+    "pic": "https://yanxuan.nosdn.127.net/ed8077b5c1930c001d33db2dca28a2a0.jpg?imageView&thumbnail=0x196",
+    "list":[ {
       "id": 15,
       "pic": "https://yanxuan.nosdn.127.net/231f1733268092f9316c0c0f30ced62e.png?imageView&quality=85&thumbnail=144x144",
       "title": "温暖舒适床品"
@@ -101,19 +96,18 @@ let data = [
       "pic": "https://yanxuan.nosdn.127.net/c6042f1b381fcdacd0276fe5bd7af535.png?imageView&quality=85&thumbnail=144x144",
       "title": "精选美味小食"
     }, {
-      "id":22,
+      "id": 22,
       "pic": "https://yanxuan.nosdn.127.net/1ee90668cf2fe0c58351ffd0f09aaff3.png?imageView&quality=85&thumbnail=144x144",
       "title": "精选美味小食"
-    }
- , {
-    "name": "爆品专区",
-      "id": 23,
-      "pic": "https://yanxuan.nosdn.127.net/edc311882c97da117f860264548212e1.png?imageView&thumbnail=0x196"
-    }, {
+    }]
+  },{
+    "id": 23,
+    "pic": "https://yanxuan.nosdn.127.net/edc311882c97da117f860264548212e1.png?imageView&thumbnail=0x196",
+    "list":[{
       "id": 24,
       "pic": "https://yanxuan.nosdn.127.net/4a7eaff4e3cb3b7e90a7e88ffc897f04.png?imageView&quality=85&thumbnail=144x144",
       "title": "居家生活"
-
+  
     }, {
       "id": 25,
       "pic": "https://yanxuan.nosdn.127.net/5aa5f7d5f2d137c1bf635eba8477aca1.png?imageView&quality=85&thumbnail=144x144",
@@ -146,12 +140,11 @@ let data = [
       "id": 32,
       "pic": "https://yanxuan.nosdn.127.net/331332104225a04d91c1672224a9ab23.png?imageView&quality=85&thumbnail=144x144",
       "title": "周边特色"
-    },{
-    "name": "新品专区",
-      "id": 33,
-      "pic": "https://yanxuan.nosdn.127.net/dec6ff5ae8bae410809598950ba1f5b4.jpg?imageView&thumbnail=0x196"
-    },
-    {
+    }]
+  }, {
+    "id": 33,
+    "pic": "https://yanxuan.nosdn.127.net/dec6ff5ae8bae410809598950ba1f5b4.jpg?imageView&thumbnail=0x196",
+    "list":[ {
       "id": 34,
       "pic": "https://yanxuan-item.nosdn.127.net/1494142790ff9cd2e3b297efd711841f.png?imageView&quality=85&thumbnail=144x144",
       "title": "居家生活新品"
@@ -185,12 +178,12 @@ let data = [
       "id": 41,
       "pic": "https://yanxuan-item.nosdn.127.net/0c8c477279a5e69f105ff19f82940b28.png?imageView&quality=85&thumbnail=144x144",
       "title": "全球特色新品"
-    }, {
-    "name": "居家生活",
-      "id": 42,
-      "pic": "https://yanxuan.nosdn.127.net/dd27620d667c0aafdd5f78d1c9b4b501.jpg?imageView&quality=75&thumbnail=0x196"
-
-    }, {
+    }]
+  },
+  {
+    "id": 42,
+    "pic": "https://yanxuan.nosdn.127.net/dd27620d667c0aafdd5f78d1c9b4b501.jpg?imageView&quality=75&thumbnail=0x196",
+    "list":[ {
       "id": 43,
       "pic": "https://yanxuan.nosdn.127.net/749f0ba087d2035b6d2937b4919952de.png?imageView&quality=85&thumbnail=144x144",
       "title": "秋冬好物"
@@ -214,12 +207,12 @@ let data = [
       "id": 48,
       "pic": "https://yanxuan.nosdn.127.net/b91e14afc5a138df8dbc3236146d24e6.png?imageView&quality=85&thumbnail=144x144",
       "title": "床垫床褥"
-    }, {
-    "name": "服饰鞋包",
-      "id": 49,
-      "pic": "https://yanxuan.nosdn.127.net/9fafb4adb40303dc2914c3aa04da03df.jpg?imageView&thumbnail=0x196"
+    }]
 
-    }, {
+  }, {
+    "id": 49,
+    "pic": "https://yanxuan.nosdn.127.net/9fafb4adb40303dc2914c3aa04da03df.jpg?imageView&thumbnail=0x196",
+    "list":[{
       "id": 50,
       "pic": "https://yanxuan.nosdn.127.net/e279c3e247614d47404d9d5d88b397c9.png?imageView&quality=85&thumbnail=144x144",
       "title": "热销爆款"
@@ -255,11 +248,13 @@ let data = [
       "id": 58,
       "pic": "https://yanxuan.nosdn.127.net/f917b00b07445c46a1df90ccaff2a8de.png?imageView&quality=85&thumbnail=144x144",
       "title": "男式T恤/POLO"
-    }, {
-    "name": "美食酒水",
-      "id": 59,
-      "pic": "https://yanxuan.nosdn.127.net/a657e5214585b1825b7970c4b956e3c2.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+
+  }, {
+
+    "id": 59,
+    "pic": "https://yanxuan.nosdn.127.net/a657e5214585b1825b7970c4b956e3c2.jpg?imageView&thumbnail=0x196",
+    "list":[ {
       "id": 60,
       "pic": "https://yanxuan.nosdn.127.net/12672efc1f7ffe63b1fa33f95708a3a8.jpg?imageView&quality=85&thumbnail=144x144",
       "title": "双11特价TOP榜"
@@ -291,11 +286,11 @@ let data = [
       "id": 67,
       "pic": "https://yanxuan.nosdn.127.net/dfc7d79ca21ee0f55428c8be218da5d3.png?imageView&quality=85&thumbnail=144x144",
       "title": "蜜饯果干"
-    }, {
-    "name": "个护清洁",
-      "id": 68,
-      "pic": "https://yanxuan.nosdn.127.net/0cf6e47037b7cc7688ec9845b543525f.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  },{
+    "id": 68,
+    "pic": "https://yanxuan.nosdn.127.net/0cf6e47037b7cc7688ec9845b543525f.jpg?imageView&thumbnail=0x196",
+    "list":[{
       "id": 69,
       "pic": "https://yanxuan.nosdn.127.net/0af70c043ee2418c63eb74135084b215.png?imageView&quality=85&thumbnail=144x144",
       "title": "爆款榜单"
@@ -324,19 +319,19 @@ let data = [
       "pic": "https://yanxuan.nosdn.127.net/cf842f27c11f1587ca55d20035c1caba.png?imageView&quality=85&thumbnail=144x144",
       "title": "身体护理"
     }, {
-      "id":76,
+      "id": 76,
       "pic": "https://yanxuan.nosdn.127.net/cef1d1b9f26a01037d705443e585d313.png?imageView&quality=85&thumbnail=144x144",
       "title": "口腔护理"
-    }, {
-    "name": "母婴亲子",
-      "id": 77,
-      "pic": "https://yanxuan.nosdn.127.net/3dbb62e200611707a0f818833b823d9a.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  },  {
+    "id": 77,
+    "pic": "https://yanxuan.nosdn.127.net/3dbb62e200611707a0f818833b823d9a.jpg?imageView&thumbnail=0x196",
+    "list":[{
       "id": 78,
       "pic": "https://yanxuan.nosdn.127.net/97f65393f6a4a7b3d91cbe0cd19c617d.png?imageView&quality=85&thumbnail=144x144",
       "title": "11.11爆品清单"
     }, {
-      "id":79,
+      "id": 79,
       "pic": "https://yanxuan.nosdn.127.net/ce21d420125e5593ffa216623955834c.png?imageView&quality=85&thumbnail=144x144",
       "title": "秋冬热卖"
     }, {
@@ -353,8 +348,8 @@ let data = [
       "title": "上衣"
     }, {
       "id": 83,
-      "pic": "https://yanxuan.nosdn.127.net/3dbb62e200611707a0f818833b823d9a.jpg?imageView&thumbnail=0x196",
-      "title": ""
+      "pic": "http://yanxuan.nosdn.127.net/cfbe20d66ea16903d786d5a19976d5d0.png?imageView&quality=85&thumbnail=144x144",
+      "title": "裙装"
     }, {
       "id": 84,
       "pic": "https://yanxuan.nosdn.127.net/8ae80697a24aefe4069f1066ebe142fc.png?imageView&quality=85&thumbnail=144x144",
@@ -363,11 +358,12 @@ let data = [
       "id": 85,
       "pic": "https://yanxuan.nosdn.127.net/cfbe20d66ea16903d786d5a19976d5d0.png?imageView&quality=85&thumbnail=144x144",
       "title": "裙装"
-    }, {
-    "name": "运动旅行",
-      "id": 86,
-      "pic": "https://yanxuan.nosdn.127.net/7325584e6fcaf7a6af0fa469b605ac0e.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  }, {
+
+    "id": 86,
+    "pic": "https://yanxuan.nosdn.127.net/7325584e6fcaf7a6af0fa469b605ac0e.jpg?imageView&thumbnail=0x196",
+    "list":[ {
       "id": 87,
       "pic": "https://yanxuan.nosdn.127.net/ba81ce10c1e0fab23d010736d65ba0a7.jpg?imageView&quality=85&thumbnail=144x144",
       "title": "Yessing"
@@ -395,11 +391,11 @@ let data = [
       "id": 93,
       "pic": "https://yanxuan.nosdn.127.net/0ccd33322fda8fc8ad7ccc61b1207afa.png?imageView&quality=85&thumbnail=144x144",
       "title": "男式运动T恤"
-    }, {
-    "name": "数码家电",
-      "id": 94,
-      "pic": "https://yanxuan.nosdn.127.net/6ea5a277746a4e9849040bf2c619d6e9.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  }, {
+    "id": 94,
+    "pic": "https://yanxuan.nosdn.127.net/6ea5a277746a4e9849040bf2c619d6e9.jpg?imageView&thumbnail=0x196",
+    "list":[ {
       "id": 95,
       "pic": "https://yanxuan.nosdn.127.net/1ca73b12b6338a54421add710d406364.png?imageView&quality=85&thumbnail=144x144",
       "title": "甄选爆款"
@@ -423,11 +419,11 @@ let data = [
       "id": 100,
       "pic": "https://yanxuan.nosdn.127.net/117270efbbb5f5520dbc609dda5d5b44.png?imageView&quality=85&thumbnail=144x144",
       "title": "头发护理"
-    }, {
-    "name": "全球特色",
-      "id": 101,
-      "pic": "https://yanxuan.nosdn.127.net/a29e68a6f85dc934412b478edc907ee8.jpg?imageView&thumbnail=0x196"
-    }, {
+    }]
+  }, {
+    "id": 101,
+    "pic": "https://yanxuan.nosdn.127.net/a29e68a6f85dc934412b478edc907ee8.jpg?imageView&thumbnail=0x196",
+    "list":[{
       "id": 102,
       "pic": "https://yanxuan.nosdn.127.net/9b809562dfee86bab55e49638fc0bd92.png?imageView&quality=85&thumbnail=144x144",
       "title": "当季星品"
@@ -456,100 +452,23 @@ let data = [
       "pic": "https://yanxuan.nosdn.127.net/6cc34e3f44e2da140a2aca023d2dc61b.png?imageView&quality=85&thumbnail=144x144",
       "title": "日用百货"
     }]
+  }]
 
-export default function right() {
-   return     <div className="right">
-   {/* <img src= alt="" className="rightImg" /> */}
-   <ul className="descInt" >
-
-        {data.map((item, index) => {
-         return <li key={item.id}>
-            <div className="descBig">
-              <div className="descItem">
-                <img src={item.pic} alt="" />
-                <span>{item.title}</span>
-              </div>
-            </div>
-          </li>
-         
-        })}
-         </ul>
-          </div>
-
-        {/* <li>
-          <div className="desc-img">
-            <div className="descript">
-              <img src={require('../../assets/images/1.2.png')} alt="" />
-              <span>超值好物9.9元起</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-net">
-            <div className="desc-doc">
-              <img src={require('../../assets/images/1.3.png')} />
-              <span>999+好评</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-abs">
-            <div className="desc-dec">
-              <img src={require('../../assets/images/1.4.png')} alt="" />
-              <span>囤货必备5折起</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-el">
-            <div className="desc-clo">
-              <img src={require('../../assets/images/1.5.png')} alt="" />
-              <span>11.11特惠3折起</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-bos">
-            <div className="desc-nav">
-              <img src={require('../../assets/images/1.6.png')} alt="" />
-              <span>每日限时冰点价</span>
-            </div>
-          </div>
+export default function right(props) {
+  console.log('props', props)
+  const result = data.filter(item=> props.id == item.id)
+  const {pic, list=[]} = result[0];
+  return <div className="right">
+    <img src={pic} alt="" className="rightImg" />
+    <ul className="descInt clearfix" >
+      {list.map((item, index) => {
+        return <li key={item.id}>
+              <img src={item.pic} alt="" />
+              <span>{item.title}</span>
         </li>
 
-        <li>
-          <div className="desc-cod">
-            <div className="desc-fod">
-              <img src={require('../../assets/images/1.8.png')} alt="" />
-              <span>11.11预售倒计时</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-toy">
-            <div className="desc-dor">
-              <img src={require('../../assets/images/1.8.png')} alt="" />
-              <span>美食特惠6折起</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="desc-rig">
-            <div className="desc-err">
-              <img src={require('../../assets/images/1.9.png')} alt="" />
-              <span>冬季穿搭59元起</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src={require('../../assets/images/2.0.png')} alt="" />
-
-        </li>
-        <li>
-          <img src={require('../../assets/images/2.1.png')} alt="" />
-        </li>
-        <li>
-          <img src={require('../../assets/images/2.2.png')} alt="" />
-        </li> */}
+      })}
+    </ul>
+  </div>
 }
 
