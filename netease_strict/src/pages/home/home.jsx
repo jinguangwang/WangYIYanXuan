@@ -4,7 +4,7 @@ import Recommend from './recommend';
 import Banner from '../../components/Banner';
 import ListArea from './listArea'
 import NewGood from './newgoods';
-import Tables from './tabs';
+
 
 class home extends React.Component {
     constructor(props){
@@ -21,7 +21,7 @@ class home extends React.Component {
 		   <Header></Header>
 
 		   {/* <Recommend></Recommend> */}
-		<Tables></Tables>
+
 		   <Banner></Banner>
 		   <Recommend></Recommend>
 		   <NewGood></NewGood>

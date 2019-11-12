@@ -44,20 +44,11 @@ export default function Wrapper(props) {
   return <div className="wrapper">
    <div className="leftNav">
     <ul className="desc">
-      {/* <li onClick={()=>props.saveId(1)}></li>
-      <li onClick={()=>props.saveId(14)}></li>
-      <li onClick={()=>props.saveId(23)}></li>
-      <li onClick={()=>props.saveId(33)}></li>
-      <li onClick={()=>props.saveId(42)}></li>
-      <li onClick={()=>props.saveId(49)}></li>
-      <li onClick={()=>props.saveId(59)}></li>
-      <li onClick={()=>props.saveId(68)}></li>
-      <li onClick={()=>props.saveId(77)}></li>
-      <li onClick={()=>props.saveId(86)}></li>
-      <li onClick={()=>props.saveId(94)}></li>
-      <li onClick={()=>props.saveId(101)}></li> */}
       {data.map((item,index)=>{
-      return  <li  onClick={()=>{props.saveId(item.id)}}>{item.list}</li>
+      return  <li className={`navItem ${props.id == item.id ? 'navItemActive' :''}`} onClick={()=>{props.saveId(item.id)}}>
+        {props.id == item.id ? <span></span> : ''}
+        {item.list}
+        </li>
       })}
      
     </ul>

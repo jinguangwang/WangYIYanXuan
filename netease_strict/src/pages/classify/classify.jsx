@@ -26,7 +26,7 @@ class classify extends React.Component {
 		return <div className="container">
 			<Search/>
 			<div className="wrapper">
-				<Wrapper saveId={this.saveId} style1={this.state.style1}/>
+				<Wrapper saveId={this.saveId} id={this.state.id} style1={this.state.style1}/>
 				<Right id={this.state.id}/>
 			</div>
 		</div>;
