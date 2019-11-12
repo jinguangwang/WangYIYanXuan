@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './header';
 // import Recommend from './recommend';
 import Banner from '../../components/Banner';
+import ListArea from './listArea'
 
 class home extends React.Component {
 	render() {
@@ -12,7 +13,7 @@ class home extends React.Component {
 		   <Header></Header>
 		   {/* <Recommend></Recommend> */}
 		   <Banner></Banner>
-		   
+		   <ListArea></ListArea>
 		  </div>
 	   </div>
 		);

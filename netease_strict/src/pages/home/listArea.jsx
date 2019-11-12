@@ -9,6 +9,10 @@ export default function ListArea() {
         <div className="listbox clearfix">
         <ListItem />
         <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
         </div>
         
     </div>

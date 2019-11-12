@@ -2,22 +2,60 @@ import React from 'react';
 import './listItem.less'
 
 export default function ListItem() {
-    return  <div className="listItem">
-        <div className="listItem-img">
-            <img src='https://yanxuan-item.nosdn.127.net/65ea6f88c2323afd86107529fe2e0b2f.png?imageView&quality=65&thumbnail=330x330' />
-            <div className="listItem-red">
-                <div className="list-img">
-                    <img src="https://yanxuan.nosdn.127.net/c168892ef76f29971032dc1c12613720.png"/>
-                    <span>好货内部价</span>
-                    <p>￥399</p>
-                    {/* <div className="time">仅剩四天</div> */}
+    return   <div className="listItem">
+                <div className="list_div" >
+                    <ul className="list_ul">
+                        <li className="list_li">
+                            <a href="">
+                                <img className="item_pic" src="https://yanxuan-item.nosdn.127.net/65ea6f88c2323afd86107529fe2e0b2f.png?imageView&quality=65&thumbnail=330x330" alt=""/>
+                            </a>
+                            <div className="list_ulDiv">
+                                
+                                <div className="list_haowu">
+                                    <span className="hao_sp1">好物内部价</span>
+                                    <span className="hao_sp2">¥399</span>
+                                </div>
+                                <div className="list_oneDay">
+                                    仅剩一天
+                                </div>
+                            </div>
+                            <span className="list_sp1">60s臻密绒磨毛四件套
+                            </span>
+                            <span className="list_sp2">$399
+                                <del>¥499</del>
+                            </span>
+                            <div className="list_neibujia">
+                                好货内部价
+                            </div>
+                        </li> 
+                        <li className='list_li'>
+                            <a href="">
+                            <img className="item_pic" src="https://yanxuan-item.nosdn.127.net/6b1f7d38b92d931766e2a36e79abcfc6.png?imageView&quality=65&thumbnail=330x330" alt=""/>
+                            </a>
+                            <div className="list_ulDiv">
+                                
+                                <div className="list_haowu">
+                                    <span className="hao_sp1">好物内部价</span>
+                                    <span className="hao_sp2">¥399</span>
+                                </div>
+                                <div className="list_oneDay">
+                                    仅剩一天
+                                </div>
+                            </div>
+                            <span className="list_sp1">60s臻密绒磨毛四件套
+                            </span>
+                            <span className="list_sp2">$399
+                                <del>¥499</del>
+                            </span>
+                            <div className="list_neibujia">
+                                好货内部价
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                {/* <div className="list-pic">
-                    <img src="https://yanxuan.nosdn.127.net/d71e2460d062eaa21d5bdf97eba9da89.png" />
-                </div> */}
-            </div>
-        </div>
-        <div className="listItem-desc">60s臻密绒磨毛四件套</div>
-        <div className="listItem-pic">￥399 <span>￥499</span></div>
-    </div>
+
+                <div >
+                </div>   
+              </div>
+    
 }
