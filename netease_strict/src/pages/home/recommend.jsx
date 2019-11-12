@@ -7,15 +7,28 @@ import './recommend.less'
 class Recommend extends Component {
     render() { 
         return ( 
-            <div className="list">
-                  <div><span>推荐</span></div>   
-                   <div><span>居家生活</span></div>    
-                   <div><span>服饰鞋包</span>  </div>  
-                   <div><span>美食酒水</span></div>    
-                   <div><span>^</span></div>    
-               
-
-            </div>
+            <div className='select-bar'>
+            <ul className='g-grow'>
+                <li>
+                    <a href="javascript:;">
+                        <i className='yi'></i>
+                        <span>网易自营品牌</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i className='huo'></i>
+                        <span>30天无忧退货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i className='kuan'></i>
+                        <span>48小时快速退款</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
          );
     }
 }

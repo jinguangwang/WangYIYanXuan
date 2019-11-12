@@ -1,35 +1,41 @@
-.list{
-    position: relative;
-    display: flex;
-    float: left;
-    top:.20rem;
+.select-bar .g-grow{
+    display:flex;
     width:100%;
-    height: 1.5rem;;
-    background: #fff;
-    div{ 
-        box-sizing: border-box;
-        display: flex;
-        position: relative;
-        top:.25rem;
-        left: .1rem;
-        font-size: .12rem;
-        width:.7rem;
-        height: .3rem;
-        line-height: .3rem;
-        // background: forestgreen;
-        span{
-            text-align: center;
-            width:.7rem;
-            height: 100%;
-            display: inline-block;
-            font-size: .14rem;
-        }
-        span.active{
-            text-decoration:underline;
-            color:#dd1a21;
-        }
-        
-        
-        
-    }
+    height:.36rem;
+    padding:0 .15rem;
+    align-items: center;
+    background-color:#fff;
+    box-sizing:border-box;
+}
+.select-bar .g-grow li{
+    flex:1;
+    -webkit-box-flex:1;
+    float:left;
+    line-height:1.5;
+    font-size:12px;
+}
+.select-bar .g-grow li a{
+    height:.16rem;
+}
+.select-bar .g-grow li a i{
+    width:.16rem;
+    height:.16rem;
+    display:inline-block;
+    vertical-align:middle;
+}
+.select-bar .g-grow li a .yi{
+    background:url('../../yi.png') center no-repeat;
+    background-size:100% 100%;
+}
+.select-bar .g-grow li a .huo{
+    background:url('../../yi.png') center no-repeat;
+    background-size:100% 100%;
+}
+.select-bar .g-grow li a .kuan{
+    background:url('../../yi.png') center no-repeat;
+    background-size:100% 100%;
+}
+.select-bar .g-grow li a span{
+    color:#333;
+    vertical-align:middle;
 }
