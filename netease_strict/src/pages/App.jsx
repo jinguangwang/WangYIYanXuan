@@ -8,7 +8,9 @@ import Identify from './Identify/Identify';
 import phoneDengLu from './personal/phoneDengLu';
 import passDL from './personal/passDL';
 import yxDengLu from './personal/yxDengLu';
-import zhuChe from './personal/zhuChe.jsx'
+import souYe from './personal/souYe.jsx';
+import zhuChe from './personal/zhuChe.jsx';
+
 
 /**导入公共样式 */
 import '../assets/css/reset.min.css'
@@ -24,10 +26,12 @@ export default class App extends React.Component {
         <Route path='/cart' component={cart} />
         <Route path='/taste' component={Identify} />
         <Route path='/personal' component={personal} />
-        <Route path='/phoneDengLu' component={phoneDengLu} exact />
+        <Route path='/phoneDengLu' component={phoneDengLu}  />
         <Route path='/yxDengLu' component={yxDengLu} />
         <Route path='/zhuChe' component={zhuChe} />
-        <Route path='/passDL' component={passDL}  exact/>
+        <Route path='/passDL' component={passDL}  />
+        <Route path='/souYe' component={souYe}  />
+
         <Redirect to='/' />
       </Switch>
       <Tab></Tab>

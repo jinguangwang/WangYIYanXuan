@@ -1,1 +1,3 @@
-export const YanZhengMa='YanZhengMa';
+export const ENTER='ENTER';
+export const ADDDENGLUTAI='ADDDENGLUTAI'
+export const DELDENGLUTAI='DELDENGLUTAI'

@@ -14,6 +14,8 @@ class phoneDengLu extends React.Component {
             errorYzM: null,
             n: null,
             yZm: null,
+            taiOne:false,
+            taiTwo:false,
         }
     }
 
@@ -41,8 +43,11 @@ class phoneDengLu extends React.Component {
                     opacity: '1',
                 }
             });
-            return;
+            return true;
         };
+        this.setState({
+            taiOne:true,
+        })
     }
 
     getPhone = () => {
@@ -62,6 +67,10 @@ class phoneDengLu extends React.Component {
                
             })
         }
+        this.setState({
+            taiTwo:true,
+        })
+        return ;
     }
 
     getYzM = () => {
@@ -77,8 +86,22 @@ class phoneDengLu extends React.Component {
                 n: m,
                 yZm: {
                     opacity: '1',
+
                 }
             })
+
+    }
+    
+    enter=()=>{
+        console.log(this.state.taiOne,this.state.taiTwo)
+        if(this.state.taiOne&&this.state.taiTwo){
+            window.location.href='http://localhost:3000/#/souYe';
+            this.setState({
+                taiOne:false,
+                taiTwo:false,
+            })
+        }
+        
 
     }
 
@@ -93,10 +116,11 @@ class phoneDengLu extends React.Component {
                 <img src={require('../../assets/images/personal_img.png')} alt="" />
             </p>
             <div className='scenter'>
+                
                 <p className='errorPhone' style={this.state.errorPhone}>请输入正确的手机号
-
                 </p>
-                <input type="number" placeholder='输入手机号' autoFocus ref={x => { this.phone = x }} onChange={ev => { this.change(ev) }} onBlur={ev => { this.leavePhone(ev) }} onFocus={this.getPhone} />
+
+                <input type="number" placeholder='输入手机号' autoFocus  onChange={ev => { this.change(ev) }} onBlur={ev => { this.leavePhone(ev) }} onFocus={this.getPhone}  ref={x=>{this.number=x}}/>
 
                 <p
                     className='errorYzM'
@@ -131,7 +155,7 @@ class phoneDengLu extends React.Component {
                     </NavLink>
                 </p>
 
-                <p className='sdengLu'>登录</p>
+                <p className='sdengLu' onClick={this.enter}>登录</p>
             </div>
             <span className='squestion' onClick={this.question}>遇到问题？</span>
 
