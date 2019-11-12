@@ -86,7 +86,7 @@ class NewGood extends Component {
                         <div className='left-title'>新人专享礼包</div>
                         <div className='left-img'>
                             <div className='left-img-static'>
-                            <img src={require("../../assets/images/QQ.png")} alt=""/>
+                            <img src={require("../../assets/images/lingqu.png")} alt=""/>
                             </div>
                             <div className='left-img-animate'></div>
                         </div>
@@ -96,7 +96,7 @@ class NewGood extends Component {
                             <a className='module-a' href="javascript:;">
                                 <div className='picWrap'>
                                     <div className='pic'>
-                                    <img src={require("../../assets/images/QQ.png")} alt=""/>
+                                    <img src={require("../../assets/images/right-pic.png")} alt=""/>
                                     </div>
                                     <div className='discount'>
                                         <div className='line1'>¥52</div>
@@ -113,7 +113,7 @@ class NewGood extends Component {
                             <a calss='module-a' href="javascript:;">
                                 <div className='picWrap'>
                                     <div className='pic'>
-                <img src={require("../../assets/images/QQ.png")} alt=""/>
+                <img src={require("../../assets/images/module2-pic.png")} alt=""/>
                                     </div>
                                     <div className='discount'>
                                         <div class='line1'>¥1</div>
