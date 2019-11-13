@@ -28,7 +28,9 @@ class cart extends React.Component {
 			<div className="cartId">
 				<img src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-d6193bd6e4.png" alt=""/>
 				<div className="cartMessage">去添加点什么吧</div>
-				<button>登录</button>
+				<button onClick={()=>{
+					window.location.href = 'http://localhost:3000/#/personal'
+				}}>登录</button>
 			</div>
 
 		</div>;
